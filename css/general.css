@@ -75,6 +75,10 @@ html {
   /* font-size: 10px; */
   font-size: 62.5%;
   overflow-x: hidden;
+
+  /* Smooth Scrolling */
+  /* DO NOT WORK IN SAFARI */
+  /* scroll-behavior: smooth; */
 }
 
 body {
