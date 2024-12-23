@@ -1,9 +1,11 @@
 /* rem and em do NOT depend on html font-size in media queries!
 Insetead, 1rem = 1em = 16px */
 
+/***************************/
 /* 1350px / 16px = 84em */
 /* BELOW (84em * 16px) = 1344px (Smaller desktops) */
 /* FIRST BREAKPOINT */
+/***************************/
 @media (max-width: 84em) {
   .hero {
     max-width: 120rem;
@@ -18,9 +20,11 @@ Insetead, 1rem = 1em = 16px */
   }
 }
 
+/***************************/
 /* 1200px / 16px = 75em */
 /* BELOW (75em * 16px) = 1200px (Landscape Tablets) */
 /* SECOND BREAKPOINT */
+/***************************/
 @media (max-width: 75em) {
   html {
     /* 9px / 16px = 0.5625 */
@@ -57,7 +61,9 @@ Insetead, 1rem = 1em = 16px */
   }
 }
 
+/***************************/
 /* BELOW 944px (Tablets) */
+/***************************/
 @media (max-width: 59em) {
   html {
     /* 8px / 16px = 0.5 = 50% */
@@ -169,5 +175,43 @@ Insetead, 1rem = 1em = 16px */
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
+  }
+}
+
+/***************************/
+/* BELOW 704px (Small Tablets) */
+/***************************/
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
   }
 }
